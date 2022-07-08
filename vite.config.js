@@ -5,12 +5,13 @@ import { createHtmlPlugin } from 'vite-plugin-html';
 import handlebars from 'vite-plugin-handlebars';
 import { handleBarsContext } from './src/handleBarsContext';
 
-// const nodeEnv = process.env.BASE_ENV ?? 'dev';
-// const basePath = nodeEnv === 'deployGh' ? '/occurai/' : '/';
+const nodeEnv = process.env.BASE_ENV ?? 'dev';
+const basePath = nodeEnv === 'deployGh' ? '/mission-fragrances/' : '/';
+const root = resolve(__dirname, 'src');
 
 export default defineConfig({
 	root: 'src',
-	// base: basePath,
+	base: basePath,
 	plugins: [
 		StylelintPlugin({ fix: true }),
 		handlebars({
@@ -19,12 +20,15 @@ export default defineConfig({
 		}),
 		createHtmlPlugin({
 			minify: true,
-			entry: 'main.js',
-			inject: {
-				data: {
-					description: 'description',
-				},
-			},
+			entry: resolve(root, 'main.js'),
 		}),
 	],
+	build: {
+		emptyOutDir: true,
+		rollupOptions: {
+			input: {
+				main: resolve(root, 'index.html'),
+			},
+		},
+	},
 });
