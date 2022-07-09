@@ -1,6 +1,53 @@
 .footer {
 	background: $dark;
 	flex-shrink: 0;
-	padding: 20px;
 	color: #fff;
+
+	&-inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 62px 0 86px 0;
+	}
+
+	&-questions {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	&-questions__title {
+		font-family: $defaultFont;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: $textGolden;
+	}
+
+	&-questions__number {
+		font-family: $defaultFont;
+		text-decoration: none;
+		color: $textGolden;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+
+	}
+
+	&-address {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&-socials {
+		display: flex;
+		flex-direction: column;
+	}
 }
