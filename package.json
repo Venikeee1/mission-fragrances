@@ -4,7 +4,7 @@
 	"version": "0.0.0",
 	"homepage": "https://venikeee1.github.io/mission-fragrances/",
 	"scripts": {
-		"dev": "vite",
+		"dev": "vite --port 3030",
 		"build": "vite build",
 		"preview": "vite preview",
 		"predeploy": "cross-env BASE_ENV=deployGh npm run build",
