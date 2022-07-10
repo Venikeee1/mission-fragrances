@@ -1,5 +1,5 @@
 .performances {
-    background-color: #0d1215;
+    background-color: $dark;
 
     &-inner {
         display: flex;
@@ -16,6 +16,7 @@ box-shadow: 37px -42px 100px #0E1215;
     &-figure__deco {
         position: absolute;
         top: 0;
+        right: 164px;
     }
 
     &-figure__intro {
