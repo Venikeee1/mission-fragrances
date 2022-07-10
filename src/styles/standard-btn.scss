@@ -12,8 +12,9 @@
     text-align: center;
     color: $black;
     padding: 18px 52px;
-    border-width: 3px;
-    border-style: solid;
-    border-image: linear-gradient(to right, rgba(208, 182, 118, 0.5), rgba(208, 182, 118, 0),rgba(208, 182, 118, 0.5)) 1;
+    border: 2px solid $textGolden;
+    // border-width: 3px;
+    // border-style: solid;
+    // border-image: linear-gradient(to right, rgba(208, 182, 118, 0.5), rgba(208, 182, 118, 0),rgba(208, 182, 118, 0.5)) 1;
     z-index: 12;
 }
