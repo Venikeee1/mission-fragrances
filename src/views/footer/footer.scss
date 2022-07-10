@@ -12,7 +12,15 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		padding: 62px 0 86px 0;
+		padding-bottom: 86px;
+		padding-top: 62px;
+		// border-width: 3px;
+		// border-bottom: 0px;
+		// border-style: solid;
+		// border-image: linear-gradient(to left, rgba(199, 148, 127, 0.2),
+		// rgba(203, 156, 136, 0.02)) 100% 1;
+		
+
 	}
 
 	&-questions {
@@ -38,6 +46,26 @@
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 24px;
+		margin-top: 20px;
+		background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), #8E939B;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+
+	&-questions__email {
+		font-family: $defaultFont;
+		text-decoration: none;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 24px;
+		background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
 
 	}
 
@@ -46,8 +74,104 @@
 		flex-direction: column;
 	}
 
+	&-address__title {
+		font-family: $defaultFont;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: $textGolden
+	}
+
+	&-address__box {
+		font-family: $defaultFont;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 20px;
+		color: #42403D;
+		margin-top: 20px;
+
+	}
+
+	&-address__descr {
+		font-family: $defaultFont;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), #8E939B;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		margin-top: 7px;
+
+	}
+
 	&-socials {
 		display: flex;
 		flex-direction: column;
+	}
+
+	&-socials__title {
+		font-family: $defaultFont;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: $textGolden;
+	}
+
+	&-socials__links {
+		display: flex;
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 32px;
+			width: 32px;
+		}
+
+		.icon-social {
+			height: 32px;
+			width: 32px;
+
+		}
+	}
+
+	&-bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 100%;
+	}
+
+	&-copyrights {
+		font-family: $defaultFont;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		color: $greyFooter;
+	}
+
+	&-additional {
+		a {
+			text-decoration: none;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 24px;
+			color: $greyFooter;
+			padding: 0 30px;
+			border-right: 1px solid $greyFooter;
+
+			&:last-child {
+				border-right: none;
+			}
+
+		}
 	}
 }
