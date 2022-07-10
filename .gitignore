@@ -25,6 +25,8 @@ yarn-error.log*
 
 /models
 
+dist
+
 .npmrc
 
 # Code editors
