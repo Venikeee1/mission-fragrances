@@ -19,7 +19,7 @@ export default defineConfig({
 			partialDirectory: resolve(__dirname, 'src/views'),
 		}),
 		createHtmlPlugin({
-			minify: true,
+			minify: false,
 			entry: resolve(root, 'main.js'),
 		}),
 	],

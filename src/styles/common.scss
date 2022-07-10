@@ -2,20 +2,20 @@ html {
 	box-sizing: border-box;
 	font-size: 62.5%;
 }
-  
+
 *,
 *::before,
 *::after {
 	box-sizing: inherit;
 }
-  
+
 body {
 	font-family: $defaultFont;
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-  
+
 img {
 	display: block;
 	max-width: 100%;
@@ -37,17 +37,16 @@ img {
 	max-width: 100%;
 	padding: 0 315px;
 	margin: 0 auto;
-  
+
 	// @include tabletLarge {
 	//   padding: 0 50px;
 	// }
-  
+
 	// @include tablet {
 	//   padding: 0 50px;
 	// }
-  
+
 	// @include mobile {
 	//   padding: 0 20px;
 	// }
-  }
-  
+}
