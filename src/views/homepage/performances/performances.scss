@@ -1,0 +1,109 @@
+.performances {
+    background-color: #0d1215;
+
+    &-inner {
+        display: flex;
+    }
+
+    &-figure {
+        position: relative;
+        background: linear-gradient(149.73deg, rgba(36, 34, 31, 0) 26.36%, #1C2127 99.35%);
+box-shadow: 37px -42px 100px #0E1215;
+
+    }
+
+    &-figure__deco {
+        position: absolute;
+        top: 0;
+    }
+
+    &-figure__intro {
+
+    }
+
+    &-figure__intro-percent {
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 250;
+        font-size: 64px;
+        line-height: 96px;
+        background: linear-gradient(129.59deg, #DAC4A4 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), #FFFFFF;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+    }
+
+    &-figure__intro-descr {
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+        background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #DAC4A4 27.37%, #8A806E 63.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+        > span {
+            font-weight: 400;
+            background: linear-gradient(129.59deg, #F0DCBF 27.37%, #8A806E 63.44%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+
+        }
+
+    }
+
+    &-figure__img {
+
+    }
+
+    &-figure__caption {
+
+    }
+
+    &-figure__caption-line {
+
+    }
+
+    &-figure__caption-text {
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+        background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+    }
+
+    &-intro {
+
+    }
+
+    &-intro__title {
+        font-family: $defaultFont2;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), linear-gradient(132.83deg, #FFFFFF 28.13%, #FFFFFF 71.15%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+    }
+
+    &-intro__btn {
+
+    }
+}
