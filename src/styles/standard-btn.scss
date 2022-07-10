@@ -1,0 +1,19 @@
+.standard-btn {
+    position: relative;
+    background: linear-gradient(97.3deg, #FFE49F 0%, #977A51 100%), #FFFFFF;
+    box-shadow: 2px 2px 20px rgba(255, 223, 162, 0.1), 10px 10px 100px rgba(255, 228, 176, 0.3);
+    border-radius: 1px;
+    font-family: $defaultFont2;
+    background-repeat: no-repeat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $black;
+    padding: 18px 52px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(208, 182, 118, 0.5), rgba(208, 182, 118, 0),rgba(208, 182, 118, 0.5)) 1;
+    z-index: 12;
+}

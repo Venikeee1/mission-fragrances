@@ -7,6 +7,7 @@
 
     &-figure {
         position: relative;
+        padding: 37px 164px 158px 315px;
         background: linear-gradient(149.73deg, rgba(36, 34, 31, 0) 26.36%, #1C2127 99.35%);
 box-shadow: 37px -42px 100px #0E1215;
 
@@ -18,10 +19,12 @@ box-shadow: 37px -42px 100px #0E1215;
     }
 
     &-figure__intro {
+        width: 70%;
 
     }
 
     &-figure__intro-percent {
+        margin: 0;
         font-family: $defaultFont;
         font-style: normal;
         font-weight: 250;
@@ -59,19 +62,26 @@ box-shadow: 37px -42px 100px #0E1215;
 
     }
 
+    &-figure__img-wrap {
+        max-height: 250px;
+        width: 0;
+    }
+
     &-figure__img {
+        position: relative;
+        top: -90px;
+        left: -140px;
+        max-width: 780px;
 
     }
 
     &-figure__caption {
-
-    }
-
-    &-figure__caption-line {
+        width: 100%;
 
     }
 
     &-figure__caption-text {
+        margin: 0;
         font-family: $defaultFont;
         font-style: normal;
         font-weight: 300;
@@ -82,17 +92,36 @@ box-shadow: 37px -42px 100px #0E1215;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+        position: relative;
+        padding-left: 36px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -20px;
+            width: 2px;
+            height: 116px;
+            background: linear-gradient(180deg, #9A896E 0%, rgba(0, 0, 0, 0) 100%);
+        }
 
     }
 
     &-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        left: -100px;
 
     }
 
     &-intro__title {
+        margin: 0;
         font-family: $defaultFont2;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 40px;
         line-height: 48px;
         background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), linear-gradient(132.83deg, #FFFFFF 28.13%, #FFFFFF 71.15%);
@@ -100,6 +129,8 @@ box-shadow: 37px -42px 100px #0E1215;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+        width: 50%;
+        margin-bottom: 60px;
 
     }
 
