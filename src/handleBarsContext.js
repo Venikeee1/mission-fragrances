@@ -10,45 +10,56 @@ export const handleBarsContext = {
 	],
 	honorTags: [
 		{
+			data: '1',
 			title: 'Bergamot',
 			description:
 				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
 		},
 		{
+			data: '2',
 			title: 'Lemon and Petitgrain Citrus',
-			description: '',
+			description:
+				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
 		},
 		{
 			title: 'Pepper Spice',
-			description: '',
+			description:
+				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
 		},
 		{
 			title: 'Herbal Cypress and Shinus Moile',
-			description: '',
+			description:
+				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
 		},
 		{
 			title: 'Neroli Floral',
-			description: '',
+			description:
+				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
 		},
 		{
 			title: 'Nutmeg Spice',
-			description: '',
+			description:
+				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
 		},
 		{
 			title: 'Musk',
-			description: '',
+			description:
+				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
 		},
 		{
 			title: 'Top notes',
-			description: '',
+			description:
+				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
 		},
 		{
 			title: 'Heart notes',
-			description: '',
+			description:
+				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
 		},
 		{
 			title: 'Base notes',
-			description: '',
+			description:
+				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
 		},
 	],
 };

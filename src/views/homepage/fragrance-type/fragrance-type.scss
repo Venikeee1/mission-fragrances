@@ -1,0 +1,221 @@
+.fragrances {
+    background-color: $dark;
+    display: flex;
+    padding-bottom: 200px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 96px;
+        background: linear-gradient(180deg, #9A896E 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    &-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &-card-wrap {
+        position: relative;
+        background: linear-gradient(33.73deg, rgba(36, 34, 31, 0) 26.36%, #1C2127 99.35%);
+        box-shadow: 37px -42px 100px #0E1215;
+        width: 70%;
+        margin-bottom: 85px;
+
+        &:nth-child(even) {
+            align-self: flex-end;
+            background: linear-gradient(-33.73deg, rgba(36, 34, 31, 0) 26.36%, #1C2127 99.35%);
+            .fragrances-card {
+                padding-left: 231px;
+                padding-right: 315px;
+                
+            }
+
+            .fragrances-type-wrap {
+                width: 100%;
+            }
+
+            .fragrances-card__img {
+                right: 100%;
+                transform: translate(40%, -50%);
+            }
+
+            .fragrances-line--left {
+                display: none;
+            }
+
+            .fragrances-line--right {
+                display: block;
+            }
+
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &-card {
+        padding-left: 315px;
+        padding-top: 116px;
+        padding-bottom: 119px;
+        position: relative;
+    }
+
+    &-card__text {
+        margin-bottom: 20px;
+
+    }
+
+    &-card__text-intro {
+        margin: 0;
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 275;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: #747474;
+        margin-bottom: 6px;
+    }
+
+    &-card__text-title {
+        margin: 0;
+        font-family: $defaultFont2;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 76px;
+        line-height: 91px;
+        background: linear-gradient(132.83deg, #EAEAEA 28.13%, #636260 71.15%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 20px;
+    }
+
+    &-card__text-descr {
+        width: 70%;
+        margin: 0;
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        background: linear-gradient(132.83deg, #EAEAEA 28.13%, #636260 71.15%), linear-gradient(0deg, #DDDDDD, #DDDDDD), linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 50px;
+
+
+    }
+
+    &-type-wrap {
+        width: 80%;
+        margin-bottom: 35px;
+
+    }
+
+    &-type__title {
+        margin: 0;
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+        background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+    }
+
+    &-type {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    &-tag {
+        position: relative;
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        padding: 12px 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-image: linear-gradient(to right, rgba(134, 133, 132, 1), rgba(60, 58, 55, 1)) 1;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+
+    &-hint {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 440px;
+        padding: 18px 25px;
+        transform: translateY(100%);
+        background: #272A2B;
+        z-index: 100;
+        opacity: 0;
+        
+        p {
+            margin: 0;
+            font-family: $defaultFont;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            color: #67696A;
+
+        }
+
+
+
+    }
+
+    &-btn {
+
+    }
+
+    &-card__img {  
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(60%, -50%);
+    }
+
+    &-line {
+        position: absolute;
+        bottom: 140px;
+    }
+
+    &-line--left {
+        right: -44%;
+    }
+
+    &-line--right {
+        display: none;
+        left: -44%;
+
+    }
+
+}
