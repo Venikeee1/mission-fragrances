@@ -25,6 +25,8 @@
 		"vite-plugin-stylelint": "^2.3.1"
 	},
 	"dependencies": {
-		"normalize.css": "^8.0.1"
+		"gsap": "^3.10.4",
+		"normalize.css": "^8.0.1",
+		"swiper": "^8.3.0"
 	}
 }
