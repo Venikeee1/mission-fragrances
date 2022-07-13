@@ -1,8 +1,11 @@
+.section-slogan-app__bg {
+    background: radial-gradient(55.76% 93% at -8.6% 115.11%, #917759 0%, #212731 58.24%, #13191D 84.16%, #111419 100%);
+}
 .app {
     position: relative;
     padding-top: 150px;
     padding-bottom: 163px;
-    background: radial-gradient(55.76% 93% at -8.6% 115.11%, #917759 0%, #212731 58.24%, #13191D 84.16%, #111419 100%); 
+     
     &::after{
         content: "";
         position: absolute;

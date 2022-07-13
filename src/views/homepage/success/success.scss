@@ -74,6 +74,8 @@
 
     &-card {
         position: relative;
+        max-width: 1290px;
+        margin: 0 auto;
         z-index: 20;
         display: flex;
         justify-content: flex-end;
@@ -135,7 +137,7 @@
 
     &-deco--golden {
         bottom: 0;
-        transform: translate(-50%, 39%);
+        transform: translate(-50%, 36%);
         z-index: 6;
 
     }

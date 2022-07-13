@@ -1,7 +1,7 @@
 .standard-btn {
+
     position: relative;
-    background: linear-gradient(97.3deg, #FFE49F 0%, #977A51 100%), #FFFFFF;
-    box-shadow: 2px 2px 20px rgba(255, 223, 162, 0.1), 10px 10px 100px rgba(255, 228, 176, 0.3);
+    background: transparent;
     border-radius: 1px;
     font-family: $defaultFont2;
     background-repeat: no-repeat;
@@ -13,9 +13,55 @@
     color: $black;
     padding: 18px 52px;
     border: 2px solid $textGolden;
+    box-shadow: 2px 2px 20px rgba(255, 223, 162, 0.1), 10px 10px 100px rgba(255, 228, 176, 0.3);
     // border-width: 3px;
     // border-style: solid;
     // border-image: linear-gradient(to right, rgba(208, 182, 118, 0.5), rgba(208, 182, 118, 0),rgba(208, 182, 118, 0.5)) 1;
     z-index: 12;
     text-transform: uppercase;
+    transition: all ease-in 0.2s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        max-width: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(97.3deg, #FFE49F 0%, #977A51 100%), #FFFFFF;  
+        z-index: -1;
+        transition: all 0.5s ease-in-out;
+        opacity: 1;
+
+    }
+
+    &:hover {
+        &::before {
+            opacity: 0;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        max-width: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(97.3deg, #FFEBB7 0%, #E2C08D 100%), #FFFFFF;
+        box-shadow: 2px 2px 20px rgba(255, 223, 162, 0.1), 10px 10px 100px rgba(255, 228, 176, 0.3);
+        z-index: -1;
+        transition: all 0.5s ease-in-out;
+        opacity: 0;
+
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;           
+        }
+    }
+    
 }
