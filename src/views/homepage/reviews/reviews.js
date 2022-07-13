@@ -8,7 +8,7 @@ const swiper = new Swiper('.reviews-slider', {
 	// autoHeight: true,
 	// centeredSlides: true,
 	keyboard: true,
-	spaceBetween: 50,
+	spaceBetween: 100,
 	slidesPerView: 'auto',
 	initialSlide: 0,
 	preloadImages: false,
