@@ -10,36 +10,34 @@ export const handleBarsContext = {
 	],
 	honorTags: [
 		{
-			data: '1',
 			title: 'Bergamot',
 			description:
-				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
+				"Stimulates your body's release of serotonin and dopamine – both essential for improving your mood.",
 		},
 		{
-			data: '2',
 			title: 'Lemon and Petitgrain Citrus',
 			description:
-				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
+				'Stimulates serotonin, and raises levels of norepinephrine - a brain chemical linked to easier decision-making and upped motivation.',
 		},
 		{
 			title: 'Pepper Spice',
 			description:
-				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
+				'Boosts circulation, improves blood flow, and normalizes blood pressure.',
 		},
 		{
 			title: 'Herbal Cypress and Shinus Moile',
 			description:
-				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
+				'Helps to relax the mind and promote creativity by reducing oxy-Hb concentration in the right prefrontal cortex and increasing parasympathetic nervous activity.',
 		},
 		{
 			title: 'Neroli Floral',
 			description:
-				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
+				'Natural mood enhancer, shown to aid in the release of serotonin, while reducing the stress hormone, cortisol.',
 		},
 		{
 			title: 'Nutmeg Spice',
 			description:
-				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
+				'Contains adaptogen properties; a natural brain stimulator that improves alertness and elevates your mood.',
 		},
 		{
 			title: 'Musk',
@@ -49,17 +47,17 @@ export const handleBarsContext = {
 		{
 			title: 'Top notes',
 			description:
-				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
+				'Bergamot, Lemon & Petitgrain Citrus; Ozone; Pepper Spice; Herbal Cypress & Shinus Mole; Neroli Floral.',
 		},
 		{
 			title: 'Heart notes',
 			description:
-				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
+				'Nutmeg Spice; Jasmin, Geranium, & Orange Blossom Florals; Herbal sage.',
 		},
 		{
 			title: 'Base notes',
 			description:
-				'Activates the motor nerve endings both in the conscious and subconscious mind, increasing the concentration power.',
+				'Woody Patchouli, Amber & Sandalwood; Musk; Leather; Olbanum; Mossy.',
 		},
 	],
 };

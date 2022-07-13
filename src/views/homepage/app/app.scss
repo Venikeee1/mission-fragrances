@@ -1,0 +1,206 @@
+.app {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 163px;
+    background: radial-gradient(55.76% 93% at -8.6% 115.11%, #917759 0%, #212731 58.24%, #13191D 84.16%, #111419 100%); 
+    &::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+        width: 2px;
+        height: 96px;
+        background: linear-gradient(180deg, #9A896E 0%, rgba(0, 0, 0, 0) 100%);
+
+    }
+
+    &-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &-intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &-title {
+        width: 80%;
+        margin: 0;
+        font-family: $defaultFont2;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), linear-gradient(132.83deg, #FFFFFF 28.13%, #FFFFFF 71.15%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 45px;
+
+    }
+
+    &-intro__main {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &-intro__left {
+        width: 28%;
+        margin-top: 100px;
+
+    }
+
+    &-intro__left-text {
+        margin: 0;
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: right;
+        background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;    
+        margin-bottom: 32px;
+        
+
+        &:last-child {
+            margin-bottom: 0;
+            background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            
+        }
+
+    }
+
+    &-intro__center {
+        padding-left: 42px;
+        padding-right: 42px;
+
+    }
+
+    &-intro__center-img {
+
+    }
+
+    &-intro__right {
+        width: 28%;
+        margin-top: 100px;
+
+    }
+
+    &-intro__right-text {
+        margin: 0;
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: right;
+        background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+
+    }
+
+    &-list__wrap {
+        position: relative;
+
+    }
+
+    &-list__title {
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 45%;
+        margin: 0;
+        font-family: $defaultFont2;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        background: linear-gradient(0deg, #C0A775, #C0A775), linear-gradient(132.83deg, #FFFFFF 28.13%, #FFFFFF 71.15%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+    }
+
+    &-card {
+        width: 24%;
+        padding: 40px;
+        height: fit-content;
+        background: linear-gradient(317.21deg, #181D20 30.11%, #1C2127 100%);
+
+    }
+
+    &-card__title {
+        margin: 0;
+        font-family: $defaultFont2;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), linear-gradient(132.83deg, #FFFFFF 28.13%, #FFFFFF 71.15%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 20px;
+
+
+    }
+
+    &-card__descr {
+        margin: 0;
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+        background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 22px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+    &-btn-wrap {
+
+    }
+
+
+}

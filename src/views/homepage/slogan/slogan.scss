@@ -1,0 +1,91 @@
+.slogan {
+    padding-top: 114px;
+    padding-bottom: 53px;
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-text__wrap {
+        position: relative;
+        width: 40%;
+        height: fit-content;
+
+    }
+
+    &-text--bold {
+        width: 80%;
+        margin: 0;
+        font-family: $defaultFont2;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        background: linear-gradient(0deg, #C0A775, #C0A775), linear-gradient(132.83deg, #FFFFFF 28.13%, #FFFFFF 71.15%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 27px;
+    }
+
+    &-text--light {
+        width: 80%;
+        margin: 0;
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+    }
+
+    &-img {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+
+    }
+
+    &-right {
+        width: 51%;
+            
+
+    }
+
+    &-right__text-wrap {
+        margin-bottom: 50px;
+        width: 80%;
+    }
+
+    &-right__text {
+        margin: 0;
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), #FFFFFF;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 31px;
+        &:last-child {
+            margin-bottom: 0;
+            background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+    }
+
+}

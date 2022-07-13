@@ -1,0 +1,196 @@
+.reviews {
+    padding-top: 80px;
+    &-inner {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &-slider-wrap {
+        width: 50%;
+        padding-right: 100px;
+
+    }
+
+    &-slider {
+        width: 100%;
+        // height: 334px;
+        margin-left: 0 !important; 
+
+    }
+
+    &-slide {
+        width: 85% !important;
+        height: fit-content !important;
+        padding: 40px 30px 46px 50px;
+        background: linear-gradient(317.21deg, #0E1215 30.11%, #1C2127 100%);
+        box-shadow: 37px -42px 100px #0E1215;
+
+    }
+
+    &-slide__deco {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    &-slide__customer {
+        display: flex;
+        margin-bottom: 30px;
+        align-items: center;
+
+    }
+
+    &-slide__customer-img {
+
+    }
+
+    &-slide__customer-summary {
+        margin-left: 24px;
+
+    }
+
+    &-slide__customer-name {
+        margin: 0;
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 21px;
+        color: #FFFFFF;
+        margin-bottom: 9px;
+
+    }
+
+    &-slide__customer-position {
+        margin: 0;
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: $textGolden;
+
+    }
+
+    &-slide__feedback-wrap {
+
+    }
+
+    &-slide__feedback {
+        width: 80%;
+        margin: 0;
+        font-family: $defaultFont;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+        color: $greyCredentials;
+
+    }
+
+    &-slider-pagination {
+        position: relative !important;
+        margin-top: 59px !important;
+
+        .swiper-pagination-bullet {
+            background: linear-gradient(180deg, #3C3E42 0%, #282E36 100%);
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background: linear-gradient(97.3deg, #FFE49F 0%, #977A51 100%), #D9D9D9;
+
+        }
+
+    }
+
+    &-intro__wrap {
+        width: 50%;
+
+    }
+
+    &-intro {
+
+    }
+
+    &-intro__title {
+        margin: 0;
+        font-family: 'Syne';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), linear-gradient(132.83deg, #FFFFFF 28.13%, #FFFFFF 71.15%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 38px;
+
+    }
+
+    &-intro__description {
+        margin: 0;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+
+        background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+
+    }
+
+    &-slider-control {
+        display: flex;
+        margin-top: 70px;
+
+    }
+
+    &-slider-btn-prev {
+        position: relative !important;
+        display: flex !important;
+        // height: 40px !important;
+        opacity: 1 !important;
+        left: 0 !important;
+        margin-top: 0 !important;
+        width: 52px !important;
+        cursor: pointer !important;
+        margin-right: 40px !important;
+
+        svg {
+            height: 32px !important;
+            width: 52px !important;
+        }
+
+        &::after {
+            display: none !important;
+        }
+    }
+
+    &-slider-btn-next {
+        position: relative !important;
+        display: flex !important;
+        // height: 40px !important;
+        width: 52px !important;
+        opacity: 1 !important;
+        right: 0 !important;
+        margin-top: 0 !important;
+        cursor: pointer !important;
+        
+        svg {
+            height: 32px !important;
+            width: 52px !important;
+        }
+
+        &::after {
+            display: none !important;
+        }
+        
+    }
+}
