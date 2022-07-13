@@ -4,12 +4,12 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 const swiper = new Swiper('.reviews-slider', {
-	loop: false,
+	loop: true,
 	// autoHeight: true,
-	centeredSlides: true,
+	// centeredSlides: true,
 	keyboard: true,
 	spaceBetween: 50,
-	slidesPerView: 1,
+	slidesPerView: 'auto',
 	initialSlide: 0,
 	preloadImages: false,
 	lazy: true,
