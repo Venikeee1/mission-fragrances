@@ -95,7 +95,7 @@ revealDevelopment.forEach((container) => {
 const revealPower = document.querySelectorAll('.mission-power');
 
 revealPower.forEach((container) => {
-	const img = container.querySelector('.mission-power__img');
+	const img = container.querySelector('.mission-power__img img');
 	const tl = gsap.timeline({
 		scrollTrigger: {
 			trigger: container,

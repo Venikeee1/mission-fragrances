@@ -123,9 +123,9 @@
 
     &-card__img {
         position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translate(-20%, -50%);
+        left: -100px;
+        top: -100px;
+        // transform: translate(-20%, -50%);
         z-index: 10;
 
     }

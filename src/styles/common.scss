@@ -1,12 +1,20 @@
+* {
+	box-sizing: border-box;
+  }
+  
+  *::after,
+  *::before {
+	box-sizing: border-box;
+  }
+
 html, body {
 	margin: 0;
 	line-height: 1.5em;
-	width: auto !important; 
+	width: 100% !important; 
 	overflow-x: hidden !important;
 	font-family: $defaultFont;
 	font-size: 14px;
 	scroll-behavior: smooth;
-	box-sizing: border-box;
   }
 
 html {
@@ -19,11 +27,7 @@ body {
 	min-height: -webkit-fill-available;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
+
 
 // body {
 // 	min-height: 100%;

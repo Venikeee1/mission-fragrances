@@ -136,9 +136,9 @@
 
     &-development__bottle-roated {
         position: absolute;
-        left: 50%;
+        left: 26%;
         bottom: 0;
-        transform: translateX(-50%);
+        // transform: translate(-50%, 0);
         z-index: 10;
     }
 
@@ -173,7 +173,7 @@
         position: absolute;
         left: 50%;
         top: -12px;
-        transform: translateX(-47%);
+        transform: translate(-50%, 0%);
         width: fit-content;
 
     }
