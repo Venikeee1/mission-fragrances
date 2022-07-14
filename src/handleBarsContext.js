@@ -1,13 +1,98 @@
 export const handleBarsContext = {
 	navItems: [
-		{ href: '#', label: 'Mission' },
-		{ href: '#', label: 'Scent' },
-		{ href: '#', label: 'Mission Fragrances' },
-		{ href: '#', label: 'Unlock Your Full Potential' },
-		{ href: '#', label: 'Performance Enhancing Colognes' },
-		{ href: '#', label: 'Reviews' },
-		{ href: '#', label: 'Productivity App' },
+		{ href: '#Mission', label: 'Mission' },
+		{ href: '#scent', label: 'Scent' },
+		{ href: '#missionFragrances', label: 'Mission Fragrances' },
+		{ href: '#shape', label: 'Unlock Your Full Potential' },
+		{ href: '#enhancing', label: 'Performance Enhancing Colognes' },
+		{ href: '#reviews', label: 'Reviews' },
+		{ href: '#productivityApp', label: 'Productivity App' },
 	],
+
+	courageTags: [
+		{
+			title: 'Galbanum',
+			description: 'Eases nervous tension and helps keep you focused.',
+		},
+		{
+			title: 'Lemongrass',
+			description: 'Keeps you alert, and energized helping you think clearly.',
+		},
+		{
+			title: 'Grapefruit',
+			description:
+				'The citrus found within grapefruit is a powerful mood balancer and stress reliever.',
+		},
+		{
+			title: 'Petitgrain Mandarin Citrus',
+			description: 'Combats stress and anxiety, helping you keep focused.',
+		},
+		{
+			title: 'Lavender',
+			description: 'Gives you the energy you need to beat the afternoon slump.',
+		},
+		{
+			title: 'Neroli',
+			description:
+				'Stimulates the release of serotonin, the important mood-enhancing neurotransmitter.',
+		},
+		{
+			title: 'Orange Blossom',
+			description:
+				'Contains monoterpenes like limonene and pinene (which act as stimulants to help you combat mid-day fatigue).',
+		},
+		{
+			title: 'Top notes',
+			description:
+				'Galbanum, Lemon, Grapefruit, Petitgrain, & Mandarin Citrus.',
+		},
+		{
+			title: 'Heart notes',
+			description:
+				'Lemongrass, Lavender, Lavandin, Neroli, Geranium, Violet, Orange Blossom, & Iris Florals, Plum & Pineapple Fruits.',
+		},
+		{
+			title: 'Base notes',
+			description: 'Mossy, Musk, Sandalwood.',
+		},
+	],
+
+	commitmentTags: [
+		{
+			title: 'Veviter',
+			description:
+				'shown to improve alertness and brain function. Decreases mental fatigue and helps you feel more awake if youre struggling to focus.',
+		},
+		{
+			title: 'Myrtle',
+			description:
+				'soothes your mind; relieves anxiety, moodiness, and irritability.',
+		},
+		{
+			title: 'Cedarwood',
+			description: 'promotes vitality while reducing anxiety.',
+		},
+		{
+			title: 'Sweet Amber',
+			description:
+				'improves cognitive performance, helping you keep productive and on-task right through to the end of your day.',
+		},
+		{ title: 'Pine Resin', description: 'invigorates the mind.' },
+		{
+			title: 'Top notes',
+			description: 'Mimosa, Myrrh, Vanilla, Myrtle, Vetiver.',
+		},
+		{
+			title: 'Heart notes',
+			description: 'Olibanum, Cedarwood, Tonka, Pepper & Guaiacwood.',
+		},
+		{
+			title: 'Base notes',
+			description:
+				'Sweet Amber, Musk, Amber Wood, Pine Resin, Oud, Black Agar, Patchouli.',
+		},
+	],
+
 	honorTags: [
 		{
 			title: 'Bergamot',
