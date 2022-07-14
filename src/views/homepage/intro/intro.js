@@ -42,8 +42,8 @@ ScrollTrigger.batch('.intro-img-wrap', {
 		batch.forEach((card, index) => {
 			// const img = card.querySelectorAll('.conditions-card-img');
 			const img = card.querySelectorAll('img');
-			const chart_tl = gsap.timeline();
-			chart_tl.to(
+			const tl = gsap.timeline();
+			tl.to(
 				card,
 				{
 					opacity: 1,
@@ -55,7 +55,7 @@ ScrollTrigger.batch('.intro-img-wrap', {
 				},
 				0.4
 			);
-			chart_tl.to(
+			tl.to(
 				img,
 				{
 					opacity: 1,
@@ -108,7 +108,7 @@ revealPower.forEach((container) => {
 		yPercent: 20,
 		delay: -1,
 		ease: Power4.out,
-		duration: 1,
+		duration: 0.7,
 	});
 });
 
@@ -123,8 +123,8 @@ ScrollTrigger.batch('.productivity', {
 	onEnter: (batch) => {
 		batch.forEach((card, index) => {
 			const img = card.querySelectorAll('img');
-			const chart_tl = gsap.timeline();
-			chart_tl.to(
+			const tl = gsap.timeline();
+			tl.to(
 				img,
 				{
 					opacity: 1,
@@ -141,26 +141,6 @@ ScrollTrigger.batch('.productivity', {
 	once: true,
 });
 
-// const revealContainers = document.querySelectorAll('.intro');
-
-// revealContainers.forEach((container) => {
-// 	const title = container.querySelector('.intro-title');
-// 	const tl = gsap.timeline({
-// 		scrollTrigger: {
-// 			trigger: container,
-// 		},
-// 	});
-
-// 	tl.set(container, { autoAlpha: 1 });
-// 	tl.from(title, {
-// 		opacity: 1,
-// 		xPercent: -20,
-// 		delay: -1,
-// 		ease: Power4.out,
-// 		duration: 1.5,
-// 	});
-// });
-
 function paralax(selector, scroller, amplitude = 20) {
 	// gsap.registerPlugin(ScrollTrigger)
 	const paralaxImages = document.querySelectorAll(selector);
@@ -174,10 +154,7 @@ function paralax(selector, scroller, amplitude = 20) {
 					scroller: scroller ? scroller : null,
 				},
 			})
-			// .to(curtain, { scaleY: 1, duration: 1,  ease: 'expo.out' })
-			// .to(curtain, { scaleY: 0, duration: 1,  ease: 'expo.out', transformOrigin: '50% 0%' })
 			.to(image, { autoAlpha: 1 }, '<');
-		// .add(() => curtain.remove())
 		gsap
 			.timeline({
 				ease: 'none',
@@ -185,7 +162,6 @@ function paralax(selector, scroller, amplitude = 20) {
 					trigger: image,
 					scrub: 0.5,
 					scroller: scroller ? scroller : null,
-					// markers: true,
 				},
 			})
 			.fromTo(
@@ -203,14 +179,13 @@ function paralax(selector, scroller, amplitude = 20) {
 
 paralax('.shape-summary__image', document.body, 100);
 paralax('.fragrances-card__img', document.body, 50);
-paralax('.success-card__img', document.body, 50);
+paralax('.success-card__img', document.body, 40);
 paralax('.app-intro__center-img', document.body, 30);
 paralax('.founder-presentation__img-wrap img', document.body, 25);
 paralax('.mission-bg', document.body, 50);
 
 gsap.set('.enhancing__img-wrap', {
-	opacity: 0,
-	xPercent: 20,
+	xPercent: 5,
 });
 
 gsap.set('.enhancing__img-wrap img', {
@@ -223,26 +198,23 @@ ScrollTrigger.batch('.enhancing__img-wrap', {
 	end: 'bottom 10%',
 	onEnter: (batch) => {
 		batch.forEach((card, index) => {
-			// const img = card.querySelectorAll('.conditions-card-img');
 			const img = card.querySelectorAll('img');
-			const chart_tl = gsap.timeline();
-			chart_tl.to(
+			const tl = gsap.timeline();
+			tl.to(
 				card,
 				{
-					opacity: 1,
 					xPercent: 0,
-					delay: index * 0.2,
 					ease: Power4.easeOut,
-					duration: 0.4,
+					duration: 0.2,
 				},
-				0.4
+				0.2
 			);
-			chart_tl.to(
+			tl.to(
 				img,
 				{
 					opacity: 1,
 					xPercent: 0,
-					stagger: 0.2,
+					stagger: 0.1,
 					delay: index * 0.2,
 					ease: Power4.easeOut,
 					duration: 1.5,
@@ -264,9 +236,8 @@ ScrollTrigger.batch('.app-card', {
 	end: 'bottom 10%',
 	onEnter: (batch) => {
 		batch.forEach((card, index) => {
-			// const img = card.querySelectorAll('.conditions-card-img');
-			const chart_tl = gsap.timeline();
-			chart_tl.to(
+			const tl = gsap.timeline();
+			tl.to(
 				card,
 				{
 					opacity: 1,
