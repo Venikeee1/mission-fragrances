@@ -1,5 +1,6 @@
 .reviews {
     padding-top: 80px;
+    width: 100%;
     &-inner {
         display: flex;
         align-items: center;
@@ -106,10 +107,6 @@
 
     &-intro__wrap {
         width: 50%;
-
-    }
-
-    &-intro {
 
     }
 
