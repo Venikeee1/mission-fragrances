@@ -5,8 +5,8 @@
 		<link rel="icon" type="image/svg+xml" href="/mission-fragrances/assets/favicon.17e50649.svg" >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 		<title>Vite App</title>
-		<script type="module" crossorigin src="/mission-fragrances/assets/main.2757e52d.js"></script>
-		<link rel="stylesheet" href="/mission-fragrances/assets/main.915bef4f.css">
+		<script type="module" crossorigin src="/mission-fragrances/assets/main.e3d789fb.js"></script>
+		<link rel="stylesheet" href="/mission-fragrances/assets/main.56ff3851.css">
 	</head>
 	<body>
 		<header class="header">
@@ -18,29 +18,34 @@
 						</svg>
 					</a>
 				</div>
-				<ul class="header-nav">
-					<li class="header-nav__item">
-						<a class="header-nav__link" href="#Mission">Mission</a>
-					</li>
-					<li class="header-nav__item">
-						<a class="header-nav__link" href="#scent">Scent</a>
-					</li>
-					<li class="header-nav__item">
-						<a class="header-nav__link" href="#missionFragrances">Mission Fragrances</a>
-					</li>
-					<li class="header-nav__item">
-						<a class="header-nav__link" href="#shape">Unlock Your Full Potential</a>
-					</li>
-					<li class="header-nav__item">
-						<a class="header-nav__link" href="#enhancing">Performance Enhancing Colognes</a>
-					</li>
-					<li class="header-nav__item">
-						<a class="header-nav__link" href="#reviews">Reviews</a>
-					</li>
-					<li class="header-nav__item">
-						<a class="header-nav__link" href="#productivityApp">Productivity App</a>
-					</li>
-				</ul>
+				<a id="toggle-menu">
+					<span> </span>
+				</a>
+				<nav id="site-navigation" class="main-navigation">
+					<ul class="header-nav">
+						<li class="header-nav__item">
+							<a class="header-nav__link" href="#Mission">Mission</a>
+						</li>
+						<li class="header-nav__item">
+							<a class="header-nav__link" href="#scent">Scent</a>
+						</li>
+						<li class="header-nav__item">
+							<a class="header-nav__link" href="#missionFragrances">Mission Fragrances</a>
+						</li>
+						<li class="header-nav__item">
+							<a class="header-nav__link" href="#shape">Unlock Your Full Potential</a>
+						</li>
+						<li class="header-nav__item">
+							<a class="header-nav__link" href="#enhancing">Performance Enhancing Colognes</a>
+						</li>
+						<li class="header-nav__item">
+							<a class="header-nav__link" href="#reviews">Reviews</a>
+						</li>
+						<li class="header-nav__item">
+							<a class="header-nav__link" href="#productivityApp">Productivity App</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 		<div class="wrapper">
@@ -431,6 +436,9 @@
 									src="/mission-fragrances/assets/spark.40c7a7bf.png"
 									alt=""
 								/>
+								<div class="mission-power__img mission-power__img--mobile">
+									<img src="/mission-fragrances/assets/knife.ab8e1140.png" alt="" />
+								</div>
 							</div>
 							<div class="mission-development__top">
 								<p class="mission-development__text mission-development__text--top">
@@ -484,6 +492,11 @@
 										src="/mission-fragrances/assets/mission-top-line.04840dae.png"
 										alt=""
 									/>
+									<img
+										class="mission-power-bg-mobile"
+										src="/mission-fragrances/assets/mission-fragrances-bg-mobile.11f27b1a.png"
+										alt=""
+									/>
 									<span class="mission-power__text-descr"
 										>of your emotions are triggered by scent.
 									</span>
@@ -512,6 +525,10 @@
 								alt=""
 							/>
 							<div class="performances-figure__intro">
+								<p class="performances-figure_title-mobile">
+									Our Performance Enhancing Colognes® Are Guaranteed To Help You Achieve
+									Peak Performance.
+								</p>
 								<p class="performances-figure__intro-percent">+543%</p>
 								<p class="performances-figure__intro-descr">
 									<span>Based on our customer's experiences,</span> your productivity
@@ -533,6 +550,9 @@
 									your productivity, right when you need it most.
 								</p>
 							</div>
+							<button class="standard-btn performances-figure__btn--mob">
+								BUY NOW
+							</button>
 						</div>
 						<div class="performances-intro">
 							<h3 class="performances-intro__title">
@@ -595,6 +615,16 @@
 				</section>
 				<section class="shape" id="shape">
 					<div class="shape-summary">
+						<div class="shape-intro__text-wrap--mobile container">
+							<h3 class="shape-intro__title">
+								Shape and change how you act, how you feel, and most importantly, how
+								you show up every day.
+							</h3>
+							<p class="shape-intro__description">
+								Develop laser-like focus, make smarter decisions faster and skyrocket
+								your productivity.
+							</p>
+						</div>
 						<img
 							class="shape-summary__image"
 							src="/mission-fragrances/assets/shape-brain.0f3276d7.png"
@@ -883,7 +913,7 @@
 											</div>
 									</div>
 								</div>
-								<button class="standard-btn">buy now</button>
+								<button class="standard-btn fragrances-btn">buy now</button>
 								<div class="fragrances-card__img-wrap">
 									<img
 									src="/mission-fragrances/assets/type-golden.04ab97e3.png"
@@ -986,7 +1016,7 @@
 											</div>
 									</div>
 								</div>
-								<button class="standard-btn">buy now</button>
+								<button class="standard-btn fragrances-btn">buy now</button>
 								<div class="fragrances-card__img-wrap">
 									<img
 									src="/mission-fragrances/assets/type-dark.b9a4e48d.png"
@@ -1235,6 +1265,10 @@
 											src="/mission-fragrances/assets/app-img.9aa6200f.png"
 											alt=""
 										/>
+										<h5 class="app-list__title app-list__title--mobile">
+											Here’s exactly what you will get inside our Productivity Mastery
+											App:
+										</h5>
 									</div>
 									<div class="app-intro__right">
 										<p class="app-intro__right-text">
