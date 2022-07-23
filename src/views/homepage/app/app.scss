@@ -32,6 +32,10 @@
         flex-direction: column;
         align-items: center;
 
+        @include tablet {
+            padding-bottom: 67px;
+        }
+
     }
 
     &-title {
@@ -41,7 +45,7 @@
         font-style: normal;
         font-weight: 600;
         font-size: 40px;
-        line-height: 48px;
+        line-height: 1.2;
         text-align: center;
         background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), linear-gradient(132.83deg, #FFFFFF 28.13%, #FFFFFF 71.15%);
         -webkit-background-clip: text;
@@ -50,17 +54,36 @@
         text-fill-color: transparent;
         margin-bottom: 45px;
 
+        @include tablet {
+            width: 95%;
+            font-size: 36px;
+        }
+
+        @include mobile {
+            font-size: 24px;
+        }
+
     }
 
     &-intro__main {
         display: flex;
         justify-content: center;
 
+        @include tablet {
+            flex-direction: column;
+        }
+
     }
 
     &-intro__left {
         width: 28%;
         margin-top: 100px;
+
+        @include tablet {
+            order: 2;
+            width: 100%;
+            margin-top: 40px;
+        }
 
     }
 
@@ -70,7 +93,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 1.5;
         text-align: right;
         background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
         -webkit-background-clip: text;
@@ -78,6 +101,11 @@
         background-clip: text;
         text-fill-color: transparent;    
         margin-bottom: 32px;
+
+        @include tablet {
+            text-align: center;
+            font-size: 15px;
+        }
         
 
         &:last-child {
@@ -96,15 +124,28 @@
         padding-left: 42px;
         padding-right: 42px;
 
+        @include tablet {
+            order: 1;
+            width: 100%;
+            position: relative;
+        }
+
     }
 
     &-intro__center-img {
+        margin: 0 auto;
 
     }
 
     &-intro__right {
         width: 28%;
         margin-top: 100px;
+
+        @include tablet {
+            order: 3;
+            width: 100%;
+            margin-top: 30px;
+        }
 
     }
 
@@ -114,13 +155,18 @@
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 1.5;
         text-align: right;
         background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+
+        @include tablet {
+            font-size: 15px;
+            text-align: center;
+        }
 
 
     }
@@ -148,6 +194,21 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &-list__title--mobile {
+        display: none;
+        
+        @include tablet {
+            display: block;
+            top: 100%;
+            width: 100%;
+            transform: translate(-50%, -100%);
+        }
     }
 
 
@@ -157,6 +218,10 @@
         justify-content: space-between;
         margin-bottom: 60px;
 
+        @include tablet {
+            flex-direction: column;
+        }
+
     }
 
     &-card {
@@ -164,6 +229,19 @@
         padding: 40px;
         height: fit-content;
         background: linear-gradient(317.21deg, #181D20 30.11%, #1C2127 100%);
+
+        @include tablet {
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 30px;
+        }
+
+        &:last-child {
+            @include tablet {
+                margin-bottom: 0;
+            }
+
+        }
 
     }
 
@@ -173,13 +251,17 @@
         font-style: normal;
         font-weight: 600;
         font-size: 24px;
-        line-height: 29px;
+        line-height: 1.2;
         background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), linear-gradient(132.83deg, #FFFFFF 28.13%, #FFFFFF 71.15%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
         margin-bottom: 20px;
+
+        @include tablet {
+            font-size: 18px;
+        }
 
 
     }
@@ -190,13 +272,14 @@
         font-style: normal;
         font-weight: 300;
         font-size: 15px;
-        line-height: 22px;
+        line-height: 1.2;
         background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
-        margin-bottom: 22px;
+        margin-bottom: 20px;
+
         &:last-child {
             margin-bottom: 0;
         }

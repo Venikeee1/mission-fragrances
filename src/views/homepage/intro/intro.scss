@@ -11,6 +11,11 @@
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: center;
+		@include tablet {
+			align-items: center;
+			padding-top: 170px;
+			padding-bottom: 78px;
+		}
 	}
 
 	&-text {
@@ -20,10 +25,20 @@
 		font-style: normal;
 		font-weight: 300;
 		font-size: 22px;
-		line-height: 33px;
+		line-height: 1.5;
 		color: $textGolden;
 		margin-bottom: 32px;
 		z-index: 12;
+
+		@include tablet {
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+
+		@include mobile {
+			font-size: 14px;
+			margin-bottom: 14px;
+		}
 	}
 
 	&-title {
@@ -36,7 +51,7 @@
 		font-style: normal;
 		font-weight: 600;
 		font-size: 64px;
-		line-height: 77px;
+		line-height: 1.2;
 		background: linear-gradient(132.83deg, #f1dec2 28.13%, #b49b75 71.15%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -44,6 +59,16 @@
 		text-fill-color: transparent;
 		margin-bottom: 50px;
 		z-index: 12;
+
+		@include tablet {
+			width: 100%;
+			text-align: center;
+			font-size: 42px;
+			margin-bottom: 40px;
+		}
+		@include mobile {
+			font-size: 30px;
+		}
 	}
 
 	&-img-wrap {
@@ -52,6 +77,13 @@
 		transform: translateY(-50%);
 		right: 0;
 		width: 50%;
+		
+		@include tablet {
+			position: relative;
+			top: 0;
+			transform: translateY(0);
+			width: 100%;
+		}
 	}
 
 	&-golden-bottle {
@@ -59,6 +91,15 @@
 		z-index: 10;
 		bottom: 0;
 		left: 0;
+		@include tablet {
+
+		}
+
+		@include mobile {
+			max-width: unset;
+			height: 426px;
+			left: -80px;
+		}
 	}
 
 	&-light-bottle {
@@ -66,6 +107,16 @@
 		z-index: 8;
 		bottom: 4%;
 		left: 21%;
+
+		@include tablet {
+
+		}
+
+		@include mobile {
+			height: 364px;
+			max-width: unset;
+			left: 50px;
+		}
 	}
 
 	&-grey-bottle {
@@ -73,6 +124,15 @@
 		z-index: 6;
 		bottom: 8%;
 		left: 39%;
+
+		@include tablet {
+
+		}
+		@include mobile {
+			height: 303px;
+			max-width: unset;
+			left: 45%;
+		}
 	}
 
 	&-line__left {
@@ -82,12 +142,18 @@
 		bottom: 0;
 		height: 100%;
 		width: 500px;
+		@include tablet {
+			display: none;
+		}
 	}
 
 	&-line__top {
 		position: absolute;
 		top: -6px;
 		left: 50%;
+		@include tablet {
+			display: none;
+		}
 	}
 
 	&-line__bottom {
@@ -95,5 +161,8 @@
 		bottom: 0;
 		right: 200px;
 		z-index: 1;
+		@include tablet {
+			display: none;
+		}
 	}
 }

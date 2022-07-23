@@ -17,6 +17,10 @@
 			right: 0;
 			top: 0;
 			background: linear-gradient(317.21deg, rgba(199, 148, 127, 0.2) 30.11%, rgba(203, 156, 136, 0.02) 100%);
+
+			@include tablet {
+				display: none;
+			}			
 		}
 	}
 
@@ -34,6 +38,11 @@
 		// border-image: linear-gradient(to left, rgba(199, 148, 127, 0.2),
 		// rgba(203, 156, 136, 0.02)) 100% 1;
 
+		@include tablet {
+			flex-direction: column;
+			align-items: center;
+		}
+
 		&::after {
 			position: absolute;
 			content: '';
@@ -42,7 +51,11 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background: linear-gradient(-315deg, rgba(199, 148, 127, 0.2) 30%, rgba(203, 156, 136, 0.02) 100%)
+			background: linear-gradient(-315deg, rgba(199, 148, 127, 0.2) 30%, rgba(203, 156, 136, 0.02) 100%);
+			
+			@include tablet {
+				display: none;
+			}
 		}
 		
 
@@ -51,6 +64,10 @@
 	&-questions {
 		display: flex;
 		flex-direction: column;
+
+		@include tablet {
+			align-items: center;
+		}
 
 	}
 
@@ -61,6 +78,11 @@
 		font-size: 16px;
 		line-height: 24px;
 		color: $textGolden;
+
+		@include tablet {
+			text-align: center;
+			margin-top: 60px;
+		}
 	}
 
 	&-questions__number {
@@ -81,6 +103,10 @@
 		text-fill-color: transparent;
 		cursor: pointer; 
 		z-index: 10;
+
+		@include tablet {
+			text-align: center;
+		}
 
 		&::before {
 			position: absolute;
@@ -116,6 +142,10 @@
 		background-clip: text;
 		text-fill-color: transparent;
 
+		@include tablet {
+			text-align: center;
+		}
+
 		&::before {
 			position: absolute;
 			content: '';
@@ -138,6 +168,10 @@
 	&-address {
 		display: flex;
 		flex-direction: column;
+
+		@include tablet {
+			margin-top: 60px;
+		}
 	}
 
 	&-address__title {
@@ -146,7 +180,11 @@
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 24px;
-		color: $textGolden
+		color: $textGolden;
+
+		@include tablet {
+			text-align: center;
+		}
 	}
 
 	&-address__box {
@@ -157,6 +195,10 @@
 		line-height: 20px;
 		color: #42403D;
 		margin-top: 20px;
+
+		@include tablet {
+			text-align: center;
+		}
 
 	}
 
@@ -173,11 +215,20 @@
 		text-fill-color: transparent;
 		margin-top: 7px;
 
+		@include tablet {
+			text-align: center;
+		}
+
 	}
 
 	&-socials {
 		display: flex;
 		flex-direction: column;
+
+		@include tablet {
+			align-items: center;
+			margin-top: 60px;
+		}
 	}
 
 	&-socials__title {
@@ -223,6 +274,10 @@
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
+
+		@include tablet {
+			flex-direction: column;
+		}
 	}
 
 	&-copyrights {
@@ -232,9 +287,37 @@
 		font-size: 12px;
 		line-height: 24px;
 		color: $greyFooter;
+
+		@include tablet {
+			order: 2;
+			position: relative;
+			margin: 0;
+			padding: 16px;
+			width: 100%;
+			text-align: center;
+		}
+
+		&::before {
+			display: none;
+			position: absolute;
+			content: '';
+			max-width: 100%;
+			height: 2px;
+			left: -50px;
+			right: 0;
+			top: 0;
+			background: linear-gradient(-315deg, rgba(199, 148, 127, 0.2) 30%, rgba(203, 156, 136, 0.02) 100%);
+
+			@include tablet {
+				display: block;
+			}
+		}
 	}
 
 	&-additional {
+		@include tablet {
+			margin-bottom: 25px;
+		}
 		a {
 			text-decoration: none;
 			font-style: normal;

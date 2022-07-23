@@ -67,15 +67,15 @@ img {
 	padding: 0 315px;
 	margin: 0 auto;
 
-	// @include tabletLarge {
-	//   padding: 0 50px;
-	// }
+	@include tabletLarge {
+	  padding: 0 50px;
+	}
 
-	// @include tablet {
-	//   padding: 0 50px;
-	// }
+	@include tablet {
+	  padding: 0 50px;
+	}
 
-	// @include mobile {
-	//   padding: 0 20px;
-	// }
+	@include mobile {
+	  padding: 0 20px;
+	}
 }

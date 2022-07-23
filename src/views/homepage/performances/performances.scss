@@ -4,6 +4,10 @@
 
     &-inner {
         display: flex;
+
+        @include tablet {
+            flex-direction: column;
+        }
     }
 
     &-figure {
@@ -12,16 +16,53 @@
         background: linear-gradient(149.73deg, rgba(36, 34, 31, 0) 26.36%, #1C2127 99.35%);
 box-shadow: 37px -42px 100px #0E1215;
 
+        @include tablet {
+            padding: 60px 20px 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
     }
 
     &-figure__deco {
         position: absolute;
         top: 0;
         right: 164px;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &-figure__intro {
         width: 70%;
+
+        @include tablet {
+            width: 100%;
+        }
+
+    }
+
+    &-figure_title-mobile {
+        display: none;
+
+        @include tablet {
+            display: block;
+            margin: 0;
+            font-family: $defaultFont2;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28.8px;
+            text-align: center;
+            background: linear-gradient(132.83deg, #F1DEC2 28.13%, #B49B75 71.15%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
 
     }
 
@@ -38,19 +79,31 @@ box-shadow: 37px -42px 100px #0E1215;
         background-clip: text;
         text-fill-color: transparent;
 
+        @include tablet {
+            text-align: center;
+        }
+
     }
 
     &-figure__intro-descr {
+        margin: 0;
         font-family: $defaultFont;
         font-style: normal;
         font-weight: 300;
         font-size: 15px;
-        line-height: 22px;
+        line-height: 1.5;
         background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #DAC4A4 27.37%, #8A806E 63.44%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+
+        @include tablet {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 12px;
+            width: 85%;
+        }
 
         > span {
             font-weight: 400;
@@ -67,6 +120,10 @@ box-shadow: 37px -42px 100px #0E1215;
     &-figure__img-wrap {
         max-height: 250px;
         width: 0;
+
+        @include tablet {
+            width: auto;
+        }
     }
 
     &-figure__img {
@@ -75,11 +132,22 @@ box-shadow: 37px -42px 100px #0E1215;
         left: -140px;
         max-width: 780px;
 
+        @include tablet {
+            margin-top: 20px;
+            max-width: 500px;
+        }
+
+        @include mobile {
+            margin-top: 13px;
+            top: 0;
+            left: -20px;
+            max-width: 367px;
+        }
+
     }
 
     &-figure__caption {
         width: 100%;
-
     }
 
     &-figure__caption-text {
@@ -88,7 +156,7 @@ box-shadow: 37px -42px 100px #0E1215;
         font-style: normal;
         font-weight: 300;
         font-size: 15px;
-        line-height: 22px;
+        line-height: 1.5;
         background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -96,6 +164,12 @@ box-shadow: 37px -42px 100px #0E1215;
         text-fill-color: transparent;
         position: relative;
         padding-left: 36px;
+
+        @include tablet {
+            padding-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 46px;
+        }
 
         &::before {
             content: '';
@@ -105,6 +179,20 @@ box-shadow: 37px -42px 100px #0E1215;
             width: 2px;
             height: 116px;
             background: linear-gradient(180deg, #9A896E 0%, rgba(0, 0, 0, 0) 100%);
+
+            @include tablet {
+               top: -10px;
+            }
+
+        }
+
+    }
+
+    &-figure__btn--mob {
+        display: none;
+
+        @include tablet {
+            display: block;
         }
 
     }
@@ -116,6 +204,10 @@ box-shadow: 37px -42px 100px #0E1215;
         align-items: flex-start;
         position: relative;
         left: -100px;
+
+        @include tablet {
+            display: none;
+        }
 
     }
 
@@ -133,10 +225,6 @@ box-shadow: 37px -42px 100px #0E1215;
         text-fill-color: transparent;
         width: 50%;
         margin-bottom: 60px;
-
-    }
-
-    &-intro__btn {
 
     }
 }

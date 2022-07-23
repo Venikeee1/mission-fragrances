@@ -6,6 +6,10 @@
     width: 100%;
 	z-index: 100;
 
+	@include tablet {
+		height: 130px;
+	}
+
 	&--scrolled {
 		background: linear-gradient(180deg, #0F1215 32%, rgba(15, 18, 21, 0.79) 57.15%, rgba(15, 18, 21, 0) 100%);
 	}
@@ -33,12 +37,30 @@
 		justify-content: space-between;
 		padding: 0;
 		list-style: none;
+
+		@include tablet {
+			flex-direction: column;
+			padding: 50px;
+		}
+
+		@include mobile {
+			padding: 20px;
+		}
 	}
 
 	&-nav__item {
 		margin-right: 40px;
+
+		@include tablet {
+			margin-right: 0;
+			margin-bottom: 35px;
+		}
 		&:last-child {
 			margin-right: 0;
+
+			@include tablet {
+				margin-bottom: 0;
+			}
 		}
 	}
 
@@ -50,7 +72,11 @@
 		font-style: normal;
 		font-weight: 300;
 		font-size: 14px;
-		line-height: 21px; 
+		line-height: 1.5; 
+
+		@include tablet {
+			font-size: 15px;
+		}
 
 		&::before {
 			position: absolute;
@@ -67,6 +93,96 @@
 			&::before {
 				width: 100%;
 			}
+		}
+	}
+
+}
+
+.main-navigation {
+	@include tablet {
+		display: none;
+	}
+}
+
+.header.active {
+	background: linear-gradient(180deg, #0F1316 72.6%, rgba(15, 19, 22, 0.79) 100%);
+	.main-navigation {
+		@include tablet {
+			display: block;
+			position: absolute;
+			top: 130px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100vh;
+			background: linear-gradient(180deg, #0F1316 72.6%, rgba(15, 19, 22, 0.79) 100%);
+		}
+	}
+
+}
+
+#toggle-menu {
+	display: none;
+
+	@include tablet {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 30px;
+	}
+
+	span {
+		position: absolute;
+		display: block;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 1px;
+		width: 30px;
+		background: #DAC4A4;
+		border-radius: 1px;
+
+		&::before {
+			content: "";
+			display: block;
+			width: 30px;
+			height: 1px;
+			background: #DAC4A4;
+			transition: all 0.3s;
+			backface-visibility: hidden;
+			border-radius: 1px;
+			top: -12px;
+			position: absolute;
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			width: 30px;
+			height: 1px;
+			background: #DAC4A4;
+			transition: all 0.3s;
+			backface-visibility: hidden;
+			border-radius: 1px;
+			bottom: -12px;
+			position: absolute;
+		}
+	}
+
+}
+
+
+#toggle-menu.on {
+
+	span {
+		background: transparent;
+
+		&::before {
+			transform: rotate(45deg) translate(9px, 10px);
+		}
+
+		&::after {
+			transform: rotate(-45deg) translate(7px, -7.5px);
 		}
 	}
 

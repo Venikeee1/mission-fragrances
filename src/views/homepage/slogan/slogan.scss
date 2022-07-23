@@ -2,15 +2,28 @@
     padding-top: 114px;
     padding-bottom: 53px;
     width: 100%;
+
+    @include tablet {
+        padding-top: 63px;
+    }
     &-inner{
         display: flex;
         justify-content: space-between;
+
+        @include tablet {
+            flex-direction: column;
+        }
     }
 
     &-text__wrap {
         position: relative;
         width: 40%;
         height: fit-content;
+
+        @include tablet {
+            width: 100%;
+            padding-bottom: 68px;
+        }
 
     }
 
@@ -28,6 +41,11 @@
         background-clip: text;
         text-fill-color: transparent;
         margin-bottom: 27px;
+
+        @include tablet {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &-text--light {
@@ -37,12 +55,18 @@
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 1.5;
         background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+
+        @include tablet {
+            width: 100%;
+            font-size: 15px;
+            text-align: center;
+        }
 
     }
 
@@ -52,17 +76,34 @@
         right: 0;
         transform: translateY(-50%);
 
+        @include tablet {
+            top: 100%;
+            right: 50%;
+            transform:  translate(50%, -68px) rotate(90deg);
+        }
+
     }
 
     &-right {
         width: 51%;
-            
+
+        @include tablet {
+            width: 100%;
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
     }
 
     &-right__text-wrap {
         margin-bottom: 50px;
         width: 80%;
+
+        @include tablet {
+            width: 100%;
+        }
     }
 
     &-right__text {
@@ -71,13 +112,20 @@
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 1.5;
         background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), #FFFFFF;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
         margin-bottom: 31px;
+
+        @include tablet {
+           text-align: center;
+           font-size: 15px;
+           margin-bottom: 40px;
+        }
+
         &:last-child {
             margin-bottom: 0;
             background: linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);

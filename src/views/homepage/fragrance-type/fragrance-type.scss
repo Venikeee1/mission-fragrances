@@ -4,6 +4,10 @@
     padding-bottom: 200px;
     position: relative;
     width: 100%;
+
+    @include tablet {
+        padding-top: 90px;
+    }
     &::after {
         content: "";
         position: absolute;
@@ -29,18 +33,31 @@
         width: 70%;
         margin-bottom: 85px;
 
+        @include tablet {
+            width: 100%;
+        }
+
         &:nth-child(1) {
             .fragrances-card__text-title {
-               font-family: $defaultFont2;
-               font-style: normal;
+                font-family: $defaultFont2;
+                font-style: normal;
                 font-weight: 600;
                 font-size: 76px;
-                line-height: 91px;
+                line-height: 1.3;
                 background: linear-gradient(132.83deg, #EAEAEA 0.13%, #636260 13.15%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 text-fill-color: transparent;
+
+                @include tablet {
+                    font-size: 50px;
+                    margin-bottom: 10px;
+                }
+
+                @include mobile {
+                    font-size: 42px;
+                }
            }
        }
 
@@ -56,6 +73,15 @@
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 text-fill-color: transparent;
+
+                @include tablet {
+                    font-size: 50px;
+                    margin-bottom: 10px;
+                }
+
+                @include mobile {
+                    font-size: 42px;
+                }
             }
         }
 
@@ -73,6 +99,15 @@
                 background-clip: text;
                 text-fill-color: transparent;
 
+                @include tablet {
+                    font-size: 50px;
+                    margin-bottom: 10px;
+                }
+
+                @include mobile {
+                    font-size: 42px;
+                }
+
             }
 
         }
@@ -83,6 +118,16 @@
             .fragrances-card {
                 padding-left: 231px;
                 padding-right: 315px;
+
+                @include tablet {
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+
+                @include mobile {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
                 
             }
 
@@ -96,6 +141,16 @@
                 width: 100%;
                 height: 100%;
                 right: 69%;
+
+                @include tablet {
+                    transform: translate(0, 0);
+                    right: 0;
+
+                }
+
+                @include mobile {
+                    height: 300px;
+                }
 
             }
 
@@ -119,7 +174,19 @@
         padding-top: 116px;
         padding-bottom: 119px;
         position: relative;
-
+        
+        @include tablet {
+            padding-top: 0;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 100px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        @include mobile {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         
 
 
@@ -127,6 +194,11 @@
 
     &-card__text {
         margin-bottom: 20px;
+
+        @include tablet {
+            order: 2;
+            margin-bottom: 30px;
+        }
 
     }
 
@@ -156,6 +228,14 @@
         background-clip: text;
         text-fill-color: transparent;
         margin-bottom: 20px;
+
+        @include tablet {
+            font-size: 50px;
+        }
+
+        @include mobile {
+            font-size: 42px;
+        }
     }
 
     &-card__text-descr {
@@ -165,7 +245,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 1.5;
         background: linear-gradient(132.83deg, #EAEAEA 28.13%, #636260 71.15%), linear-gradient(0deg, #DDDDDD, #DDDDDD), linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -173,12 +253,22 @@
         text-fill-color: transparent;
         margin-bottom: 50px;
 
+        @include tablet {
+            width: 100%;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
 
     }
 
     &-type-wrap {
         width: 80%;
         margin-bottom: 35px;
+
+        @include tablet {
+            order: 3;
+            width: 100%;
+        }
 
     }
 
@@ -236,6 +326,13 @@
         margin-bottom: 15px;
         z-index: 11;
         cursor: pointer;
+
+        @include tablet {
+            font-size: 12px;
+            padding: 6px 9.5px;
+            margin-right: 12px;
+            margin-bottom: 12px;
+        }
 
         &:hover {
             background: linear-gradient(129.59deg, #FFFFFF 27.37%, #ffffff 63.44%);
@@ -303,6 +400,11 @@
 
     &-btn {
 
+        @include tablet {
+            order: 4;
+            align-self: flex-start;
+        }
+
     }
 
     &-card__img-wrap {  
@@ -311,11 +413,39 @@
         right: 0;
         transform: translate(60%, -50%);
         z-index: 10;
+
+        @include tablet {
+            position: relative;
+            order: 1;
+            right: 0;
+            top: 0;
+            transform: translate(0, 0);
+
+        }
+
+        @include mobile {
+            height: 300px;
+        }
+    }
+
+    &-card__img {
+
+        @include mobile {
+            max-width: 450px;
+            height: 450px;
+            position: relative;
+            left: -10%;
+            top: -100px;
+        }
     }
 
     &-line {
         position: absolute;
         bottom: 140px;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &-line--left {

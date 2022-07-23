@@ -5,6 +5,11 @@
     padding-bottom: 240px;
     width: 100%;
 
+    @include tablet {
+        padding-top: 100px;
+        padding-bottom: 68px;
+    }
+
     &-inner {
         display: flex;
         flex-direction: column;
@@ -18,11 +23,16 @@
         font-style: normal;
         font-weight: 275;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 1.5;
         letter-spacing: 0.26em;
         text-transform: uppercase;
         color: $greySection;
         margin-bottom: 37px;
+
+        @include tablet {
+            font-size: 16px;
+        }
+        
 
     }
 
@@ -33,13 +43,18 @@
         font-style: normal;
         font-weight: 600;
         font-size: 76px;
-        line-height: 91px;
+        line-height: 1.2;
         text-align: center;
         background: linear-gradient(132.83deg, #F1DEC2 28.13%, #B49B75 71.15%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+
+        @include tablet {
+            font-size: 42px;
+            width: 100%;
+        }
 
     }
 
@@ -49,18 +64,39 @@
         padding-right: 50px;
         margin-top: -50px;
 
+        @include tablet {
+            padding: 0;
+            margin-top: 0;
+        }
+
     }
 
     &__img--light {
+
+        @include tablet {
+            max-width: 200px;
+            position: relative;
+            right: -25px;
+        }
 
     }
 
     &__img--golden {
 
+        @include tablet {
+            max-width: 200px;
+        }
+
 
     }
 
     &__img--dark {
+
+        @include tablet {
+            max-width: 200px;
+            position: relative;
+            left: -25px;
+        }
 
     }
 
@@ -71,9 +107,14 @@
         font-style: normal;
         font-weight: 300;
         font-size: 20px;
-        line-height: 30px;
+        line-height: 1.5;
         color: $textGolden;
         margin-top: 60px;
+
+        @include tablet {
+            font-size: 15px;
+            margin-top: 47px;
+        }
         &::after {
             content: "";
             position: absolute;
@@ -83,6 +124,12 @@
             width: 2px;
             height: 96px;
             background: linear-gradient(180deg, #9A896E 0%, rgba(0, 0, 0, 0) 100%);
+            z-index: 12;
+            
+            @include tablet {
+                bottom: -50px;
+                height: 50px;
+            }
         }
 
 

@@ -4,16 +4,35 @@
     justify-content: space-between;
     padding-top: 150px;
     width: 100%;
+
+    @include tablet {
+        flex-direction: column;
+        padding-top: 100px;
+    }
     &-summary {
         position: relative;
         width: 55%;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include tablet {
+            flex-direction: column;
+            width: 100%;
+            padding-bottom: 51px;
+        }
     }
 
     &-summary__image {
         max-width: 1100px;
+
+        @include tablet {
+            max-width: 768px;
+        }
+
+        @include mobile {
+            max-width: 375px;
+        }
 
     }
 
@@ -23,6 +42,13 @@
         right: 90px;
         width: 60%;
         padding-left: 36px;
+
+        @include tablet {
+            width: 100%;
+            right: 0;
+            left: 0;
+            bottom: 50px;
+        }
         ::before {
             content: "";
             position: absolute;
@@ -31,6 +57,12 @@
             width: 2px;
             height: 96px;
             background: linear-gradient(180deg, #9A896E 0%, rgba(0, 0, 0, 0) 100%);
+
+            @include tablet {
+               height: 87px;
+               left: 20px;
+            }
+
         }
 
     }
@@ -41,8 +73,12 @@
         font-style: normal;
         font-weight: 300;
         font-size: 15px;
-        line-height: 22px;
+        line-height: 1.5;
         color: $textGolden;
+
+        @include tablet {
+            font-size: 12px;
+        }
     }
 
     &-intro {
@@ -50,11 +86,28 @@
         flex-direction: column;
         width: 45%;
         justify-content: flex-end;
+
+        @include tablet {
+            width: 100%;
+        }
     }
 
     &-intro__text-wrap {
         padding-right: 315px;
+
+        @include tablet {
+            display: none;
+        }
     }
+
+    &-intro__text-wrap--mobile {
+        display: none;
+
+        @include tablet {
+            display: block;
+        }
+    }
+
 
     &-intro__title {
         margin: 0;
@@ -62,13 +115,23 @@
         font-style: normal;
         font-weight: 600;
         font-size: 40px;
-        line-height: 48px;
+        line-height: 1.2;
         background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), linear-gradient(132.83deg, #FFFFFF 28.13%, #FFFFFF 71.15%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
         margin-bottom: 44px;
+
+        @include tablet {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        @include mobile {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
 
     }
 
@@ -78,7 +141,7 @@
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 1.5;
         background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -86,16 +149,31 @@
         text-fill-color: transparent;
         margin-bottom: 54px;
 
+        @include tablet {
+            margin-bottom: 34px;
+        }
+
     }
 
     &-intro__button-wrap {
         padding: 60px 315px 109px 60px;
         background: linear-gradient(317.21deg, #0E1215 30.11%, #1C2127 100%);
         box-shadow: 37px -42px 100px #0E1215;
+
+        @include tablet {
+            padding:  40px 20px 61px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &-intro__button-text-wrap {
         margin-bottom: 60px;
+
+        @include tablet {
+            margin-bottom: 40px;
+        }
     }
 
     &-intro__button-text {
@@ -104,13 +182,19 @@
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 1.5;
         background: linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%), linear-gradient(129.59deg, #A19C92 27.37%, #8A806E 63.44%), linear-gradient(129.59deg, #FFF3E1 27.37%, #DAC4A4 63.44%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
         margin-bottom: 36px;
+        
+        @include tablet {
+            text-align: center;
+            font-size: 15px;
+        }
+
         &:last-child {
             margin-bottom: 0;
         }
